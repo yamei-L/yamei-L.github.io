@@ -186,15 +186,28 @@
 <p>然后按默认选项安装即可。安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</p>
 </li>
 </ul>
-<h4 id="2-2-node"><a href="#2-2-node" class="headerlink" title="2.2 node"></a>2.2 node</h4><h4 id="2-3-hexo"><a href="#2-3-hexo" class="headerlink" title="2.3 hexo"></a>2.3 hexo</h4><ul>
+<h4 id="2-2-node"><a href="#2-2-node" class="headerlink" title="2.2 node"></a>2.2 node</h4><ul>
+<li><p>node是什么？</p>
+<p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。  Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。    </p>
+</li>
+<li><p>安装</p>
+<p>Windows 安装包(.msi)</p>
+<p>32 位安装包下载地址 : <a href="https://nodejs.org/dist/v4.4.3/node-v4.4.3-x86.msi" target="_blank" rel="noopener">https://nodejs.org/dist/v4.4.3/node-v4.4.3-x86.msi</a></p>
+<p>64 位安装包下载地址 : <a href="https://nodejs.org/dist/v4.4.3/node-v4.4.3-x64.msi" target="_blank" rel="noopener">https://nodejs.org/dist/v4.4.3/node-v4.4.3-x64.msi</a></p>
+<p>根据提示步骤安装即可，安装完成后打开cmd输入<code>node -v</code>就可以看到当前node.js版本</p>
+</li>
+</ul>
+<h4 id="2-3-hexo"><a href="#2-3-hexo" class="headerlink" title="2.3 hexo"></a>2.3 hexo</h4><ul>
 <li><p>hexo是什么？</p>
 <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 </p>
 </li>
 <li><p>安装</p>
+<p>安装了node以后里面 集成了npm包管理工具</p>
+<p>安装hexo<code>npm install -g hexo -cli</code></p>
+<p>然后<code>hexo -v</code>查看版本</p>
 </li>
-</ul>
-<ul>
-<li>安装了git for windows（或者其它git客户端）</li>
+<li><p>安装了git for windows（或者其它git客户端）</p>
+</li>
 </ul>
 <h2 id="3、步骤"><a href="#3、步骤" class="headerlink" title="3、步骤"></a>3、步骤</h2><p>所有安装步骤完成后：</p>
 <p>1.输入<code>makdir blog</code>,表示在当前文件夹下新建一个blog文件夹</p>
@@ -202,10 +215,10 @@
 <p>3.输入<code>hexo s</code>，其中s表示server，之后在浏览器输入localhost:4000就能看到所搭的个人博客</p>
 <p>4.输入<code>hexo n &quot;文章名字&quot;</code>,其中n表示new,新建一个博客文章，之后就可以在blog/sourse目录下看到新建的md文件，可以用Typora打开进行编辑，然后保存，刷新页面就会看到新的文章。</p>
 <p>5.改主题：例子<code>[hexo-theme-yilia]，</code>地址：<code>(https://github.com/litten/hexo-theme-yilia)</code></p>
-<p>首先在命令行切换到博客的根目录下，也就是blog目录下。输入<code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code>然后修改<code>_config.yml</code>中的<code>theme: landscape</code>改为<code>theme: yilia</code>，然后执行<code>hexo clean</code>在执行<code>hexo g</code>来重新生成。最后<code>hexo s</code></p>
+<p>首先在命令行切换到博客的根目录下，也就是blog目录下。输入<code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code>然后修改<code>_config.yml</code>中的<code>theme: landscape</code>改为<code>theme: yilia</code>，然后执行<code>hexo clean</code>在执行<code>hexo g</code>来重新生成，最后<code>hexo s</code>。</p>
 <p>6.托管到github上</p>
-<p>首先在github上新建<code>你的用户名.github.io</code>的仓库 ，例如test.github.io，必须是这种格式。将来访问博客的地址就为<a href="http://test.github.io" target="_blank" rel="noopener">http://test.github.io</a> 。然后回到命令行输入<code>hexo d</code>。</p>
-<p>当然，如果你更改了博客内容，则要在命令行先输入<code>hexo clean</code>清理一下，再<code>hexo g</code></p>
+<p>首先在github上新建<code>你的用户名.github.io</code>的仓库 ，例如test.github.io，必须是这种格式。将来访问博客的地址就为<a href="http://test.github.io" target="_blank" rel="noopener">http://test.github.io</a> 。然后回到命令行安装一个git的部署插件<code>npm install --save hexo-deployer-git</code>,然后配置<code>_config.yml</code>文件，找到里面的deployment下配置<code>type: git</code>，github地址(这个地址在你的github仓库中有可以复制一下)<code>repo: https://github.com/test/test.github.io</code>配置<code>branch: master</code>(其中这些配置中冒号之后的空格不能省略)。命令行输入<code>hexo d</code>部署到远端。</p>
+<p>当然，如果你更改了博客内容，则要在命令行先输入<code>hexo clean</code>清理一下，再<code>hexo g</code>。</p>
 
       
 
