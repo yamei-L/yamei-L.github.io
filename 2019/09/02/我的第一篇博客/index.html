@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>使用hexo+github搭建免费个人博客过程 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、准备工作前言 ：此次安装过程是基于windows操作系统，如果是开发环境最好使用Linux系统搭建博客。 1.1 在开始一切之前，你必须已经： 有一个github账号，没有的话去注册一个； 安装了node.js、npm，并了解相关基础知识； 安装了git for windows（或者其它git客户端）  2、安装2.1  git Git是最流行的分布式版本控制系统 ，是inus花了两周时间用C">
+  <meta name="description" content="1、准备工作前言 ：此次安装过程是基于windows操作系统，如果是开发环境最好使用Linux系统搭建博客。 1.1 在开始一切之前，你必须已经： 有一个github账号，没有的话去注册一个； 安装了node.js、npm，并了解相关基础知识； 安装了git for windows（或者其它git客户端）  2、安装2.1 git Git是最流行的分布式版本控制系统 ，是inus花了两周时间用C语">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用hexo+github搭建免费个人博客过程">
 <meta property="og:url" content="http://yoursite.com/2019/09/02/我的第一篇博客/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1、准备工作前言 ：此次安装过程是基于windows操作系统，如果是开发环境最好使用Linux系统搭建博客。 1.1 在开始一切之前，你必须已经： 有一个github账号，没有的话去注册一个； 安装了node.js、npm，并了解相关基础知识； 安装了git for windows（或者其它git客户端）  2、安装2.1  git Git是最流行的分布式版本控制系统 ，是inus花了两周时间用C">
+<meta property="og:description" content="1、准备工作前言 ：此次安装过程是基于windows操作系统，如果是开发环境最好使用Linux系统搭建博客。 1.1 在开始一切之前，你必须已经： 有一个github账号，没有的话去注册一个； 安装了node.js、npm，并了解相关基础知识； 安装了git for windows（或者其它git客户端）  2、安装2.1 git Git是最流行的分布式版本控制系统 ，是inus花了两周时间用C语">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-02T13:03:02.266Z">
+<meta property="og:updated_time" content="2019-09-06T01:48:52.414Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo+github搭建免费个人博客过程">
-<meta name="twitter:description" content="1、准备工作前言 ：此次安装过程是基于windows操作系统，如果是开发环境最好使用Linux系统搭建博客。 1.1 在开始一切之前，你必须已经： 有一个github账号，没有的话去注册一个； 安装了node.js、npm，并了解相关基础知识； 安装了git for windows（或者其它git客户端）  2、安装2.1  git Git是最流行的分布式版本控制系统 ，是inus花了两周时间用C">
+<meta name="twitter:description" content="1、准备工作前言 ：此次安装过程是基于windows操作系统，如果是开发环境最好使用Linux系统搭建博客。 1.1 在开始一切之前，你必须已经： 有一个github账号，没有的话去注册一个； 安装了node.js、npm，并了解相关基础知识； 安装了git for windows（或者其它git客户端）  2、安装2.1 git Git是最流行的分布式版本控制系统 ，是inus花了两周时间用C语">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -180,7 +180,7 @@
 <li>安装了node.js、npm，并了解相关基础知识；</li>
 <li>安装了git for windows（或者其它git客户端）</li>
 </ul>
-<h2 id="2、安装"><a href="#2、安装" class="headerlink" title="2、安装"></a>2、安装</h2><h4 id="2-1-git"><a href="#2-1-git" class="headerlink" title="2.1  git"></a>2.1  git</h4><ul>
+<h2 id="2、安装"><a href="#2、安装" class="headerlink" title="2、安装"></a>2、安装</h2><h4 id="2-1-git"><a href="#2-1-git" class="headerlink" title="2.1 git"></a>2.1 git</h4><ul>
 <li><p>Git是最流行的分布式版本控制系统 ，是inus花了两周时间用C语言写的，在2008年，GitHub网站上线了，它为开源项目免费提供Git存储，无数开源项目开始迁移至GitHub，包括jQuery，PHP，Ruby等等。 </p>
 </li>
 <li><p>安装</p>
@@ -188,7 +188,7 @@
 <p>然后按默认选项安装即可。安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</p>
 </li>
 </ul>
-<h4 id="2-2-hexo"><a href="#2-2-hexo" class="headerlink" title="2.2 hexo"></a>2.2 hexo</h4><ul>
+<h4 id="2-2-node"><a href="#2-2-node" class="headerlink" title="2.2 node"></a>2.2 node</h4><h4 id="2-3-hexo"><a href="#2-3-hexo" class="headerlink" title="2.3 hexo"></a>2.3 hexo</h4><ul>
 <li><p>hexo是什么？</p>
 <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 </p>
 </li>
@@ -204,9 +204,10 @@
 <p>3.输入<code>hexo s</code>，其中s表示server，之后在浏览器输入localhost:4000就能看到所搭的个人博客</p>
 <p>4.输入<code>hexo n &quot;文章名字&quot;</code>,其中n表示new,新建一个博客文章，之后就可以在blog/sourse目录下看到新建的md文件，可以用Typora打开进行编辑，然后保存，刷新页面就会看到新的文章。</p>
 <p>5.改主题：例子<code>[hexo-theme-yilia]，</code>地址：<code>(https://github.com/litten/hexo-theme-yilia)</code></p>
-<p>首先在命令行切换到博客的根目录下，也就是blog目录下。输入<code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code>然后修改<code>_config.yml</code>中的<code>theme: landscape</code>改为<code>theme: yilia</code>，然后执行``hexo clean<code>在执行</code>hexo g<code>来重新生成。最后</code>hexo s`</p>
+<p>首先在命令行切换到博客的根目录下，也就是blog目录下。输入<code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code>然后修改<code>_config.yml</code>中的<code>theme: landscape</code>改为<code>theme: yilia</code>，然后执行<code>hexo clean</code>在执行<code>hexo g</code>来重新生成。最后<code>hexo s</code></p>
 <p>6.托管到github上</p>
 <p>首先在github上新建<code>你的用户名.github.io</code>的仓库 ，例如test.github.io，必须是这种格式。将来访问博客的地址就为<a href="http://test.github.io" target="_blank" rel="noopener">http://test.github.io</a> 。然后回到命令行输入<code>hexo d</code>。</p>
+<p>当然，如果你更改了博客内容，则要在命令行先输入<code>hexo clean</code>清理一下，再<code>hexo g</code></p>
 
       
 
